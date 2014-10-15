@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+
+  <title>Adding Subtle UI Details with Midnight.js, Wow.js and Animate.css</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
+
+  <link href="http://fonts.googleapis.com/css?family=Lato:400,400bold" rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" href="css/normalize.css" />
+
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  
+</head>
+<body>
+
+
+  <!-- This is our fixed header, which will be enhanced with Midnight.js -->
+  <nav class="fixed">
+    <div class="midnightHeader default">
+      <div class="container">
+        <span class="logo">A How To Guide</span>
+      </div>
+    </div>
+    <div class="midnightHeader gray">
+      <div class="container">
+        <span class="logo">Shhhhhhhhh</span>
+      </div>
+    </div>
+    <div class="midnightHeader pink">
+      <div class="container">
+        <span class="logo">❤❤❤ OMG PUPPIES ❤❤❤</span>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- These are our landing page's sections -->
+  <section class="fjords" data-midnight="white">
+    <article>
+      <h1 class="wow fadeInUp">Adding Subtle UI Details</h1>
+      <p class="wow fadeInUp" data-wow-delay="0.5s">Using Midnight.js, Wow.js and Animate.css</p>
+      <p class="wow fadeInUp" data-wow-delay="1.0s"><a href="http://aerolab.github.io/subtle-animations" target="_blank">Learn how to do this on Github &gt;</a></p>
+    </article>
+  </section>
+
+
+  <section class="ships" data-midnight="gray">
+    <article>
+      <h1 class="wow fadeIn" data-wow-duration="1.5s">Be quiet</h1>
+      <p class="wow fadeIn" data-wow-delay="0.5s" data-wow-duration="1.5s">I'm hunting wabbits</p>
+    </article>
+  </section>
+
+
+  <section class="puppy" data-midnight="pink">
+    <article>
+      <h1 class="wow shake" data-wow-iteration="5" data-wow-duration="0.5s">OMG A PUPPY &lt;3</h1>
+      <p class="wow fadeIn" data-wow-delay="2.5s">Ok, this one wasn't subtle at all</p>
+    </article>
+  </section>
+
+
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <!-- Midnight.js -->
+  <script src="js/midnight.jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $('nav.fixed').midnight();
+  });
+  </script>
+
+  <!-- Wow.js -->
+  <script src="js/wow.min.js"></script>
+  <script>new WOW().init()</script>
+
+</body>
+</html>

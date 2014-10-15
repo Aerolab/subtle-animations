@@ -1,0 +1,61 @@
+body {
+  background: #fff;
+  font-family: Lato, Arial, sans-serif;
+}
+
+/* Our Fixed Header */
+nav.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+nav.fixed .container {
+  position: relative;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+
+/* There are our main "sections", which are huge images with some text */
+section {
+  min-height: 100vh;
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+article {
+  display: block;
+  margin: 0px auto;
+}
+h1 {
+  font-size: 50px;
+}
+p {
+  font-size: 26px;
+}
+
+section.fjords {
+  background-image: url(images/fjords.jpg);
+  color: #fff;
+}
+section.ships {
+  background-image: url(images/ships.jpg);
+  background-position: 50% 100%;
+  color: #999;
+}
+section.puppy {
+  background-image: url(images/puppy.jpg);
+  color: #ffc0cb;
+}

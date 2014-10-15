@@ -15,7 +15,7 @@ To create a base for this project, I put together a bunch of photographs from ht
 
 ## Dynamically change your fixed headers using Midnight.js
 
-If you took a look at the demo site, you probably noticed that the minimalistic header we are using for “LoremIpsum" becomes illegible in very light backgrounds. When this happens in most sites, we typically end up putting a background on the header, which usually improves legibility at the cost of making the design worse.
+If you took a look at the demo site, you probably noticed that the minimalistic header we are using for "A How To Guide" becomes illegible in very light backgrounds. When this happens in most sites, we typically end up putting a background on the header, which usually improves legibility at the cost of making the design worse.
 
 **Midnight.js [http://aerolab.github.io/midnight.js/](http://aerolab.github.io/midnight.js/)** is a jQuery plugin that changes your headers as you scroll, so the header always has a design that matches the content below it. This is particularly useful for minimalistic websites, as they often use transparent headers. 
 
@@ -89,9 +89,9 @@ If you check the site now, you’ll notice that the fixed header gracefully chan
 
 ### Bonus Feature!
 
-It’s possible to completely change the markup of your header just for a specific section. It’s mostly used to add some visual details that require extra markup, but it can be used to completely alter your headers as necessary. In this case, we’ll be changing the “logo" from “LoremIpsum" to “Shhhhhhhhh" on the ships section, and a bunch of hearts for the part of the puppy, for additional bad comedy.
+It’s possible to completely change the markup of your header just for a specific section. It’s mostly used to add some visual details that require extra markup, but it can be used to completely alter your headers as necessary. In this case, we’ll be changing the “logo" from "A How To Guide" to "Shhhhhhhhh" on the ships section, and a bunch of hearts for the part of the puppy, for additional bad comedy.
 
-To do this, we need to alter our fixed header a bit. **First we need to identify the “default" header** (all headers that don't have custom markup will be based on this one), and then add the markup for any custom headers, like the gray one. 
+To do this, we need to alter our fixed header a bit. **First we need to identify the “default" header** (all headers that don't have custom markup will be based on this one), and then add the markup we need for any custom headers, like the gray one. 
 
 This is done by creating multiple copies of the header and wrapping them in **.midnightHeader.default**, **.midnightHeader.gray** and **.midnightHeader.pink** respectively:
 
@@ -126,7 +126,7 @@ Wow.js lets you animate things as they come into view. For instance, you can fad
 
 To get Wow.JS to work we have to include just two things:
 
-**Animate.css**, which contains all the animations we need. Of course, you can create your own, or even tweak those to match your tastes. Just add a link to animate.css in the <head> of the document:
+**Animate.css**, which contains all the animations we need. Of course, you can create your own, or even tweak those to match your tastes. Just add a link to animate.css in the head of the document:
 ```html
 <link rel="stylesheet" href="css/animate.css" />
 ```
@@ -139,7 +139,7 @@ And **Wow.JS**. This is simply just including the script and initializing it, wh
 
 That’s it! To animate an element as soon as it gets into view, **you just need to add the .wow class to that element**, and then any animation from Animate.css (like .fadeInUp, .slideInLeft, or one of the many options available at [http://daneden.github.io/animate.css/](http://daneden.github.io/animate.css/)). 
 
-For example, to make something fade in from the bottom of the screen, you just have to add wow fadeInUp. Let’s try this on the <h1> our first section:
+For example, to make something fade in from the bottom of the screen, you just have to add wow fadeInUp. Let’s try this on the h1 our first section:
 
 ```html
 <section class="fjords" data-midnight="white">
@@ -150,7 +150,7 @@ For example, to make something fade in from the bottom of the screen, you just h
 </section>
 ```
 
-If you feel like altering the animation slightly, you have quite a bit of control over how it behaves. For instance, let’s fade in the subtitle, but do it a bit later, so it follows a sequence. We can use **data-wow-delay="0.5s"** to make the subtitle wait for half a second before making its appearance:
+If you feel like altering the animation slightly, you have quite a bit of control over how it behaves. For instance, let’s fade in the subtitle, but do it a few milliseconds after the title, so it follows a sequence. We can use **data-wow-delay="0.5s"** to make the subtitle wait for half a second before making its appearance:
 
 ```html
 <section class="fjords" data-midnight="white">

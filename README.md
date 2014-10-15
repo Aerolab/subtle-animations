@@ -10,7 +10,7 @@ To create a base for this project, I put together a bunch of photographs from ht
 
 **Download the files from [http://aerolab.github.io/subtle-animations/assets/basics.zip](http://aerolab.github.io/subtle-animations/assets/basics.zip) and put them in a new folder.**
 
-*You can also check out the final result at [http://aerolab.github.io/subtle-animations](http://aerolab.github.io/subtle-animations)*.
+*You can also check out the final result at [http://aerolab.github.io/subtle-animations](http://aerolab.github.io/subtle-animations/)*.
 
 
 ## Dynamically change your fixed headers using Midnight.js
@@ -31,7 +31,7 @@ Implementation is quite simple, as the setup is pretty much automatic. Start by 
 
 Most of the setup comes in specifying which header corresponds to which section. This is done by adding **data-midnight="your-class"** to any section or piece of content that requires a different design for the header.
 
-For the first section, we’ll be using a white header, so we’ll add **data-midnight="white"** to this section *(it doesn’t have to be only a <section>, any large element works well)*.
+For the first section, we’ll be using a white header, so we’ll add **data-midnight="white"** to this section *(it doesn’t have to be only a section, any large element works well)*.
 
 ```html
 <section class="fjords" data-midnight="white">
@@ -68,7 +68,7 @@ Now we just need to add some css rules to change the look of the header in those
 .midnightHeader.pink { color: #ffc0cb; }
 ```
 
-Last but not least, we need to include the necessary libraries. We’ll add two libraries right before the end of the </body>: **jQuery** and **Midnight.js** (they are included in the project files inside the js folder):
+Last but not least, we need to include the necessary libraries. We’ll add two libraries right before the end of the body: **jQuery** and **Midnight.js** (they are included in the project files inside the js folder):
 
 ```html
 <script src="js/jquery-1.11.1.min.js"></script>
